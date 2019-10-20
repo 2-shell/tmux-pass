@@ -102,6 +102,7 @@ main() {
   sel="$(echo "$items" | \
     fzf \
       --inline-info --no-multi \
+      --history="$HOME/.tmux-pass-history" \
       --tiebreak=begin \
       --preview="$preview_cmd" \
       $preview_hidden \
